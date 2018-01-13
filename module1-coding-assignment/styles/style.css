@@ -1,0 +1,18 @@
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+div {
+    text-align: center;
+}
+textarea {
+    border-width: 0.5em;
+}
+.border-green {
+    border-color: green;
+}
+.border-red {
+    border-color: red;
+}

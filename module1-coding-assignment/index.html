@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lunch Check</title>
+</head>
+<body>
+    <div ng-controller="LunchCheckController">
+        <textarea ng-model="lunch" ng-class="{'border-green':count>0,'border-red':count<1}"
+                  cols="50" rows="10">
+        </textarea><br>
+        <button ng-click="check()">Check If Too Much</button>
+        <h2 ng-class="{'green':count>0,'red':count<1}">{{message}}</h2>
+    </div>
+    <script src="lib/angular.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
