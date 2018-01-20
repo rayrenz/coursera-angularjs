@@ -21,10 +21,9 @@
             <div class="col-sm-6" ng-controller="AlreadyBoughtController as bought">
                 <h1>Already Bought</h1>
                 <h4 ng-if="bought.list.length < 1">Nothing bought yet!</h4>
-                <ol style="list-style-type: none">
-                    <li ng-repeat="item in bought.list" class="row">
+                    <div ng-repeat="item in bought.list" class="row">
                         <span class="col-sm-6"><i class="fa fa-check"></i> Bought {{ item.quantity }} {{ item.name }}</span>
-                    </li>
+                    </div>
                 </ol>
             </div>
         </div>
