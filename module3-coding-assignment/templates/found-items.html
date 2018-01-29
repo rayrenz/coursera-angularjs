@@ -1,0 +1,5 @@
+<div class="menu-item" ng-repeat="item in found">
+    <h4>{{ item.name }} ({{ item.short_name }})</h4>
+    <p>{{ item.description }}</p>
+    <button class="btn btn-default remove-item" ng-click="removeItem({index: $index})">Don't want this one!</button>
+</div>

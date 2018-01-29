@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="NarrowItDownApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Menu Searcher</title>
+</head>
+<body>
+    <div class="container" ng-controller="NarrowItDownController as nidc">
+        <h1>Menu Searcher</h1>
+        <input type="text" ng-model="nidc.searchTerm">
+        <button ng-click="nidc.narrowItDown()">Narrow It Down For Me!</button><br>
+        <found-items found="nidc.found" remove-item="nidc.removeItem(index)"></found-items>
+        <h5 ng-if="nidc.showNotFound">Nothing found</h5>
+    </div>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/masonry.pkgd.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

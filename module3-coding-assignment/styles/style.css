@@ -1,0 +1,19 @@
+div.container {
+    margin-top: 2rem;
+}
+.menu-item {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 200px;
+    height: 250px;
+    padding: 0 10px 50px 10px;
+    margin: 10px;
+    background-color: #f7e1b5;
+}
+button.remove-item {
+    position: absolute;
+    bottom: 10px;
+    left: 21px;
+    width: 151px;
+}
