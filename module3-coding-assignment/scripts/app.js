@@ -19,7 +19,7 @@
           });
       };
       nidc.removeItem = function (index) {
-          console.log(nidc.found.splice(index, 1));
+          nidc.found.splice(index, 1);
           showOrHideMessage();
       };
       nidc.showNotFound = false;
