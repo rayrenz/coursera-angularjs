@@ -3,7 +3,6 @@ div.container {
 }
 .menu-item {
     position: relative;
-    display: inline-block;
     float: left;
     width: 200px;
     height: 250px;
@@ -16,4 +15,7 @@ button.remove-item {
     bottom: 10px;
     left: 21px;
     width: 151px;
+}
+#error {
+    display: none;
 }

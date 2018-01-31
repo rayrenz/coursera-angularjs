@@ -12,11 +12,11 @@
         <h1>Menu Searcher</h1>
         <input type="text" ng-model="nidc.searchTerm">
         <button ng-click="nidc.narrowItDown()">Narrow It Down For Me!</button><br>
-        <found-items found="nidc.found" remove-item="nidc.removeItem(index)"></found-items>
-        <h5 ng-if="nidc.showNotFound">Nothing found</h5>
+        <found-items found="nidc.found" remove-item="nidc.removeItem(index)"
+                     is-empty-list="nidc.isEmptyList()"></found-items>
     </div>
+    <script src="lib/jquery-3.3.1.min.js"></script>
     <script src="lib/angular.min.js"></script>
-    <script src="lib/masonry.pkgd.min.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
